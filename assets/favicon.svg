@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="LR2B">
+  <rect width="64" height="64" rx="8" fill="#fbfaf6"/>
+  <rect x="7" y="7" width="50" height="50" rx="8" fill="#ffffff" stroke="#e7e2d8"/>
+  <text x="32" y="39" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#111111">LR</text>
+</svg>
