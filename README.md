@@ -1,19 +1,54 @@
-# LR2B Landing Page
+# LR2B
 
-Minimal static website for `lr2b.com`.
+Minimal landing page for **lr2b.com**.
 
-## Upload
+LR2B is a small dev team building digital products that work: websites, apps, bots, automation, AI/scraping systems, VPN/proxy tools, and trading systems.
 
-Upload these files and folders to the web root of the domain:
+## Live Site
 
-- `index.html`
-- `script.js`
-- `robots.txt`
-- `sitemap.xml`
-- `assets/`
+- Domain: [lr2b.com](https://lr2b.com)
+- Repository: [github.com/lr2bmail/lr2b.com](https://github.com/lr2bmail/lr2b.com)
 
-## Notes
+## Stack
 
-- The page uses Tailwind from the official CDN, so there is no build step.
-- No generated hero image is used.
-- Update `contact@lr2b.com` in `index.html` if you want another email.
+- Static HTML
+- Tailwind CSS CDN
+- Small vanilla JavaScript menu
+- SEO metadata, Open Graph tags, sitemap, robots file, and JSON-LD structured data
+
+## Project Structure
+
+```text
+.
+├── index.html
+├── script.js
+├── robots.txt
+├── sitemap.xml
+├── CNAME
+└── assets/
+    ├── apple-touch-icon.svg
+    ├── favicon.svg
+    └── og-image.png
+```
+
+## Deploy
+
+This repo is ready for GitHub Pages.
+
+1. Push changes to `main`.
+2. GitHub Actions deploys the static site.
+3. Point the domain `lr2b.com` to GitHub Pages.
+
+## Local Preview
+
+Open `index.html` directly in a browser, or run a tiny static server:
+
+```bash
+python -m http.server 8080
+```
+
+Then open `http://localhost:8080`.
+
+## Contact
+
+[contact@lr2b.com](mailto:contact@lr2b.com)
