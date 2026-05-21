@@ -60,7 +60,7 @@
   <body class="min-h-screen bg-paper text-ink antialiased selection:bg-accent selection:text-white">
     <header class="mx-auto flex w-[min(1080px,calc(100%-32px))] items-center justify-between border-b border-line py-5">
       <a href="#top" class="flex items-center gap-3 font-semibold tracking-tight" aria-label="LR2B home">
-        <span class="grid h-8 w-8 place-items-center rounded-sm bg-accent text-xs font-bold text-white">LR</span>
+        <span class="grid h-8 w-8 place-items-center rounded-sm bg-accent text-xs font-bold text-white shadow-[4px_4px_0_#cfe0f5]">LR</span>
         <span class="text-lg">LR2B</span>
       </a>
       <nav class="hidden items-center gap-7 text-sm font-medium text-muted sm:flex" aria-label="Primary navigation">
@@ -83,34 +83,40 @@
     </nav>
 
     <main id="top">
-      <section class="mx-auto grid w-[min(1080px,calc(100%-32px))] gap-10 pb-14 pt-12 sm:pb-16 sm:pt-14 lg:min-h-[440px] lg:grid-cols-[1.04fr_0.96fr] lg:items-center">
+      <section class="mx-auto grid w-[min(1080px,calc(100%-32px))] gap-10 pb-14 pt-12 sm:pb-16 sm:pt-14 lg:min-h-[460px] lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
         <div>
-          <div class="mb-5 h-1 w-20 bg-accent"></div>
+          <div class="mb-6 inline-flex items-center gap-3 border border-line bg-panel px-3 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+            <span class="h-2 w-2 bg-accent"></span>
+            LR2B studio
+          </div>
           <h1 class="max-w-3xl text-5xl font-bold leading-[0.98] tracking-tight sm:text-6xl lg:text-7xl">
             Digital products built clean.
           </h1>
         </div>
-        <div class="max-w-lg border border-line bg-panel p-6 lg:justify-self-end">
-          <p class="text-xl leading-8 text-muted">Websites, apps, bots, automation, and custom systems by a two-person dev team.</p>
-          <div class="mt-7 grid grid-cols-2 gap-2 text-sm font-semibold text-ink">
-            <span class="border border-line bg-white px-3 py-2">Apps</span>
-            <span class="border border-line bg-white px-3 py-2">Bots</span>
-            <span class="border border-line bg-white px-3 py-2">AI</span>
-            <span class="border border-line bg-white px-3 py-2">Systems</span>
-          </div>
-          <div class="mt-7 flex flex-wrap gap-3">
-            <a class="rounded-sm bg-accent px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-700" href="#contact">Start a project</a>
-            <a class="rounded-sm border border-line bg-white px-5 py-3 text-sm font-semibold text-accent transition hover:border-accent/50 hover:bg-blue-50" href="#work">View work</a>
+        <div class="max-w-lg border border-line bg-white p-0 shadow-[8px_8px_0_#dbeafe] lg:justify-self-end">
+          <div class="border-b border-line bg-panel px-5 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-muted">Build stack</div>
+          <div class="p-6">
+            <p class="text-xl leading-8 text-muted">Websites, apps, bots, automation, and custom systems by a two-person dev team.</p>
+            <div class="mt-7 grid gap-px border border-line bg-line text-sm font-semibold text-ink">
+              <span class="flex items-center justify-between bg-white px-4 py-3"><span>Web</span><span class="text-accent">01</span></span>
+              <span class="flex items-center justify-between bg-white px-4 py-3"><span>Bots</span><span class="text-accent">02</span></span>
+              <span class="flex items-center justify-between bg-white px-4 py-3"><span>AI</span><span class="text-accent">03</span></span>
+              <span class="flex items-center justify-between bg-white px-4 py-3"><span>Systems</span><span class="text-accent">04</span></span>
+            </div>
+            <div class="mt-7 flex flex-wrap gap-3">
+              <a class="rounded-sm bg-accent px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-700" href="#contact">Start a project</a>
+              <a class="rounded-sm border border-line bg-white px-5 py-3 text-sm font-semibold text-accent transition hover:border-accent/50 hover:bg-blue-50" href="#work">View work</a>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="services" class="border-y border-line bg-panel">
         <div class="mx-auto grid w-[min(1080px,calc(100%-32px))] gap-px border-x border-line bg-line py-0 sm:grid-cols-4">
-          <div class="bg-white px-5 py-6 text-sm font-semibold text-blue-950">Websites & Apps</div>
-          <div class="bg-white px-5 py-6 text-sm font-semibold text-blue-950">Bots & Automation</div>
-          <div class="bg-white px-5 py-6 text-sm font-semibold text-blue-950">AI & Scraping</div>
-          <div class="bg-white px-5 py-6 text-sm font-semibold text-blue-950">VPN / Proxy / Trading</div>
+          <div class="bg-white px-5 py-6 text-sm font-semibold text-blue-950"><span class="mb-3 block text-xs text-accent">01</span>Websites & Apps</div>
+          <div class="bg-white px-5 py-6 text-sm font-semibold text-blue-950"><span class="mb-3 block text-xs text-accent">02</span>Bots & Automation</div>
+          <div class="bg-white px-5 py-6 text-sm font-semibold text-blue-950"><span class="mb-3 block text-xs text-accent">03</span>AI & Scraping</div>
+          <div class="bg-white px-5 py-6 text-sm font-semibold text-blue-950"><span class="mb-3 block text-xs text-accent">04</span>VPN / Proxy / Trading</div>
         </div>
       </section>
 
@@ -121,32 +127,37 @@
           <span class="hidden text-sm text-muted sm:inline">Behind FireVPN, ZProxies, Proxy11, ZaSend, and FreeToolo.</span>
         </div>
         <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-          <a class="group border border-line bg-white p-6 transition hover:-translate-y-0.5 hover:border-accent/50" href="https://firevpn.net/" target="_blank" rel="noopener">
+          <a class="group border border-line bg-white p-6 transition hover:-translate-y-0.5 hover:border-accent/60 hover:shadow-[5px_5px_0_#dbeafe]" href="https://firevpn.net/" target="_blank" rel="noopener">
+            <div class="mb-8 text-xs font-semibold text-accent">VPN</div>
             <h3 class="font-semibold">FireVPN</h3>
-            <p class="mt-4 text-sm text-muted group-hover:text-accent">firevpn.net</p>
+            <p class="mt-4 text-sm text-muted group-hover:text-accent">firevpn.net -></p>
           </a>
-          <a class="group border border-line bg-white p-6 transition hover:-translate-y-0.5 hover:border-accent/50" href="https://zproxies.com/" target="_blank" rel="noopener">
+          <a class="group border border-line bg-white p-6 transition hover:-translate-y-0.5 hover:border-accent/60 hover:shadow-[5px_5px_0_#dbeafe]" href="https://zproxies.com/" target="_blank" rel="noopener">
+            <div class="mb-8 text-xs font-semibold text-accent">PROXY</div>
             <h3 class="font-semibold">ZProxies</h3>
-            <p class="mt-4 text-sm text-muted group-hover:text-accent">zproxies.com</p>
+            <p class="mt-4 text-sm text-muted group-hover:text-accent">zproxies.com -></p>
           </a>
-          <a class="group border border-line bg-white p-6 transition hover:-translate-y-0.5 hover:border-accent/50" href="https://proxy11.com/" target="_blank" rel="noopener">
+          <a class="group border border-line bg-white p-6 transition hover:-translate-y-0.5 hover:border-accent/60 hover:shadow-[5px_5px_0_#dbeafe]" href="https://proxy11.com/" target="_blank" rel="noopener">
+            <div class="mb-8 text-xs font-semibold text-accent">TOOLS</div>
             <h3 class="font-semibold">Proxy11</h3>
-            <p class="mt-4 text-sm text-muted group-hover:text-accent">proxy11.com</p>
+            <p class="mt-4 text-sm text-muted group-hover:text-accent">proxy11.com -></p>
           </a>
-          <a class="group border border-line bg-white p-6 transition hover:-translate-y-0.5 hover:border-accent/50" href="https://zasend.com/" target="_blank" rel="noopener">
+          <a class="group border border-line bg-white p-6 transition hover:-translate-y-0.5 hover:border-accent/60 hover:shadow-[5px_5px_0_#dbeafe]" href="https://zasend.com/" target="_blank" rel="noopener">
+            <div class="mb-8 text-xs font-semibold text-accent">MESSAGING</div>
             <h3 class="font-semibold">ZaSend</h3>
-            <p class="mt-4 text-sm text-muted group-hover:text-accent">zasend.com</p>
+            <p class="mt-4 text-sm text-muted group-hover:text-accent">zasend.com -></p>
           </a>
-          <a class="group border border-line bg-white p-6 transition hover:-translate-y-0.5 hover:border-accent/50" href="https://freetoolo.com/" target="_blank" rel="noopener">
+          <a class="group border border-line bg-white p-6 transition hover:-translate-y-0.5 hover:border-accent/60 hover:shadow-[5px_5px_0_#dbeafe]" href="https://freetoolo.com/" target="_blank" rel="noopener">
+            <div class="mb-8 text-xs font-semibold text-accent">WEB APP</div>
             <h3 class="font-semibold">FreeToolo</h3>
-            <p class="mt-4 text-sm text-muted group-hover:text-accent">freetoolo.com</p>
+            <p class="mt-4 text-sm text-muted group-hover:text-accent">freetoolo.com -></p>
           </a>
         </div>
         </div>
       </section>
 
       <section id="contact" class="mx-auto w-[min(1080px,calc(100%-32px))] py-16 sm:py-20">
-        <div class="border border-line bg-white p-8 sm:p-10">
+        <div class="border border-line bg-panel p-8 shadow-[8px_8px_0_#dbeafe] sm:p-10">
           <p class="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-accent">Start here</p>
           <div class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
             <h2 class="max-w-xl text-3xl font-semibold tracking-tight sm:text-5xl">Have something to build?</h2>
