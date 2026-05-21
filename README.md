@@ -17,9 +17,11 @@ Use these settings:
 
 - Framework preset: `None`
 - Build command: `npm run build`
-- Build output directory: `/` or `.`
+- Build output directory: `dist`
 
-The compiled CSS is committed at `assets/styles.css`, so direct static upload also works.
+Do not use `/` or `.` as the output directory on Cloudflare Pages. That can upload `node_modules` and fail because dependency binaries are too large.
+
+The compiled CSS is also committed at `assets/styles.css`, so direct static upload still works.
 
 ## Local Preview
 
@@ -36,4 +38,10 @@ Install dependencies and rebuild the production stylesheet:
 ```bash
 npm install
 npm run build
+```
+
+For local root-file preview only:
+
+```bash
+npm run build:local
 ```
