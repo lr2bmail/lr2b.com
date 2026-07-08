@@ -32,7 +32,13 @@
   </url>
   <url>
     <loc>https://lr2b.com/work/freetoolo/</loc>
-    <lastmod>2026-06-14</lastmod>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lr2b.com/work/zforex/</loc>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
