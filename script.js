@@ -49,3 +49,19 @@ if (copyEmailButton) {
     }
   });
 }
+
+// Project enquiry form: no server here, so it opens the visitor's email app with the message filled in.
+const enquiryForm = document.querySelector("[data-enquiry]");
+
+if (enquiryForm) {
+  enquiryForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const data = new FormData(enquiryForm);
+    const name = String(data.get("name") || "").trim();
+    const email = String(data.get("email") || "").trim();
+    const brief = String(data.get("brief") || "").trim();
+    const subject = `Project enquiry from ${name}`;
+    const body = `${brief}\n\n${name}\n${email}`;
+    window.location.href = `mailto:contact@lr2b.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
+}
