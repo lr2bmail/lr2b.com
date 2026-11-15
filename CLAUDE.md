@@ -20,6 +20,9 @@ Static site for LR2B (product studio). Read `README.md` for which file does what
 - No external requests: fonts are self-hosted, and `_headers` sets a strict Content-Security-Policy (`'self'` only).
   Anything loaded from another domain will be blocked unless the policy is changed.
 
+Note: Cloudflare serves files from the repo root. `.assetsignore` keeps this file, README, tools/ and dotfiles off the
+live site; keep anything private out of the repo anyway.
+
 ## Known open items (owner's Cloudflare dashboard, not files)
 - `www.lr2b.com` has no DNS record.
 - "Always Use HTTPS" is off (plain http is not redirected).
